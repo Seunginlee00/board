@@ -1,0 +1,15 @@
+package com.dto.ex;
+
+import com.sun.jmx.snmp.Timestamp;
+
+public class contentDTO {
+	int b_id;
+	String b_name;
+	String b_title;
+	String b_content;
+	Timestamp b_date;
+	int b_hit;
+	int b_group;
+	int b_step;
+	int b_intent;
+}
