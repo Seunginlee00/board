@@ -18,6 +18,7 @@ public class BReplyCommend implements BCommend {
 		String bStep = request.getParameter("bStep");
 		String bIndent = request.getParameter("bIndent");
 		
+		System.out.println(bId+bGroup + bStep + bIndent);
 		BDao dao = new BDao();
 		dao.reply(bId,bName,bTitle,bContent,bGroup,bStep,bIndent);
 	}

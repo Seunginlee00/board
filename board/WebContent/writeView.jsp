@@ -8,15 +8,7 @@
 </head>
 <body>
 	<table width="500" cellpacing="0" border="1">
-		<form action="modify.do?bId=${contentView.bId}" method="post">
-			<tr>
-				<td>번호</td>
-				<td name="bId">${contentView.bId}</td>
-			</tr>
-			<tr>
-				<td>조회수</td>
-				<td>${contentView.bHit}</td>
-			</tr>
+		<form action="write.do" method="post">
 			<tr>
 				<td>이름</td>
 				<td><input type="text" name="bName" value="${contentView.bName}"></td>
@@ -31,10 +23,11 @@
 			</tr>
 			<tr>
 				<td colspan="2">
-					<input type="submit" value="수정">&nbsp;&nbsp;
+					<input type="submit" value="글쓰기">&nbsp;&nbsp;
+					<input type="reset" value="수정">&nbsp;&nbsp;
 					<a href="list.do">목록보기</a>&nbsp;&nbsp;
-					<a href="delete.do?bId=${contentView.bId}">삭제</a>&nbsp;&nbsp;
-					<a href="replyView.do?bId=${contentView.bId}">답변</a>
+					<a href=" deleto.do?bId=${contentView.bId}">삭제</a>&nbsp;&nbsp;
+					<a href=" replyView.do?bId=${contentView.bId}">답변</a>
 				</td>		
 			</tr>
 		</form>

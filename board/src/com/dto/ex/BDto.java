@@ -11,10 +11,10 @@ public class BDto {
 	int bHit;
 	int bGroup;
 	int bStep;
-	int bIntent;
+	int bIndent;
 	
 	public BDto(int bId, String bName, String bTitle, String bContent, Timestamp bDate, int bHit, int bGroup, int bStep,
-			int bIntent) {
+			int bIndent) {
 		super();
 		this.bId = bId;
 		this.bName = bName;
@@ -24,7 +24,7 @@ public class BDto {
 		this.bHit = bHit;
 		this.bGroup = bGroup;
 		this.bStep = bStep;
-		this.bIntent = bIntent;
+		this.bIndent = bIndent;
 	}
 	public int getbId() {
 		return bId;
@@ -74,11 +74,11 @@ public class BDto {
 	public void setbStep(int bStep) {
 		this.bStep = bStep;
 	}
-	public int getbIntent() {
-		return bIntent;
+	public int getbIndent() {
+		return bIndent;
 	}
-	public void setbIntent(int bIntent) {
-		this.bIntent = bIntent;
+	public void setbIndent(int bIndent) {
+		this.bIndent = bIndent;
 	}
 	
 }

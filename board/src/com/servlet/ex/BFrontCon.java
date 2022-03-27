@@ -14,7 +14,9 @@ import com.commend.ex.BContentCommend;
 import com.commend.ex.BListCommend;
 import com.commend.ex.BModifyCommend;
 import com.commend.ex.BReplyCommend;
+import com.commend.ex.BReplyViewCommend;
 import com.commend.ex.BdeleteCommend;
+import com.commend.ex.BwriteCommend;
 
 /**
  * Servlet implementation class BFrontCon
@@ -47,7 +49,7 @@ public class BFrontCon extends HttpServlet {
 		if(com.equals("/writeView.do")) {
 			viewPage = "writeView.jsp";
 		}else if(com.equals("/write.do")) {
-			///commend = new BwriteCommend(); // 생성해야함
+			commend = new BwriteCommend(); // 생성해야함
 			commend.execute(request,response);
 			viewPage = "list.do";
 		}else if(com.equals("/list.do")) {
@@ -61,13 +63,13 @@ public class BFrontCon extends HttpServlet {
 		}else if(com.equals("/modify.do")) {
 			commend = new BModifyCommend(); // 생성해야함
 			commend.execute(request,response);
-			viewPage = "lit.do";
+			viewPage = "list.do";
 		}else if(com.equals("/delete.do")) {
 			commend = new BdeleteCommend(); // 생성해야함
 			commend.execute(request,response);
 			viewPage = "list.do";
 		}else if(com.equals("/replyView.do")) {
-			//commend = new BReplyViewCommend(); // 생성해야함
+			commend = new BReplyViewCommend(); // 생성해야함
 			commend.execute(request,response);
 			viewPage = "replyView.jsp";
 		}else if(com.equals("/reply.do")) {
